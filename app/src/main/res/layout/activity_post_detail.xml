@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    tools:context="fmproduct.taleynamalar.PostDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+         <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_margin="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:clipChildren="false">
+                    <LinearLayout
+                        android:id="@+id/header_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="6dp"
+                        android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/primary"
+                            android:fontFamily="@font/m_light"
+                            android:text="@string/news"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/news"/>
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/black_tr"
+                        android:layout_alignTop="@id/post_image"
+                        app:contentPadding="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:tint="@android:color/white"
+                                android:layout_marginEnd="2dp"
+                                app:srcCompat="@drawable/eye"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="123"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/m_light"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center_vertical"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ayperi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/m_light"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="6dp"
+                        android:text="@string/ayperi"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/post_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/girl_banner01"
+                        android:layout_below="@id/header_news"
+                        android:adjustViewBounds="true"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/post_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem_ipsum"
+                        android:padding="8dp"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/m_light"
+                        android:ellipsize="end"
+                        android:layout_below="@id/post_image"/>
+
+                    <RelativeLayout
+                        android:id="@+id/footer"
+                        android:layout_below="@+id/post_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.varunest.sparkbutton.SparkButton
+                            android:id="@+id/like"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:layout_toStartOf="@id/like_value"
+                            app:sparkbutton_activeImage="@drawable/heart_fill"
+                            app:sparkbutton_inActiveImage="@drawable/heart"
+                            app:sparkbutton_iconSize="22dp"
+                            app:sparkbutton_primaryColor="@color/colorPrimary"
+                            app:sparkbutton_secondaryColor="@color/regular"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/like_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="1223"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:alpha="0.5"
+                        android:layout_below="@id/footer"
+                        android:background="@color/black"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/comment_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/comment_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:padding="4dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/m_bold"
+                            android:textColor="@color/primary"
+                            android:text="@string/comments"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/comment_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:nestedScrollingEnabled="true"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:layout_below="@id/comment_title"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/comment_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            app:fabSize="mini"
+                            android:src="@drawable/comment_add"
+                            app:backgroundTint="@color/primary"
+                            android:tint="@color/white"
+                            android:layout_margin="4dp"
+                            android:layout_below="@id/comment_recycler"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/comment_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/comment_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_medium"
+            android:layout_toStartOf="@id/comment_send"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="Ваш комментария"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/comment_send"
+            app:backgroundTint="@color/primary"
+            android:tint="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

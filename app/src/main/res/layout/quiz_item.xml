@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/m_medium"
+            android:textSize="22sp"/>
+
+        <LinearLayout
+            android:id="@+id/quiz_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quiz"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:fontFamily="@font/m_bold"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:text="Проголосовать"/>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="6dp"-->
+<!--                android:paddingBottom="6dp"-->
+<!--                >-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:id="@+id/title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="@font/m_light"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:text="Google (google.com)"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:fontFamily="@font/m_light"-->
+<!--                    android:layout_alignEnd="@id/title"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:text="70%"/>-->
+
+<!--                <ProgressBar-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/title"-->
+<!--                    android:progress="70"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    style="?android:attr/progressBarStyleHorizontal"-->
+<!--                    />-->
+
+<!--            </RelativeLayout>-->
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

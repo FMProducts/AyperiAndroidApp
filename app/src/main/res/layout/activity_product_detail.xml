@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="fmproduct.taleynamalar.ProductDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="8dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/black_tr"
+                    app:contentPadding="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@android:color/white"
+                            android:layout_marginEnd="2dp"
+                            app:srcCompat="@drawable/eye"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/m_light"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/girl_banner01"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/product_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_image"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/m_light"
+                    android:padding="10dp"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_text"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="4dp"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/call"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/phone"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/call"
+                        android:layout_marginStart="4dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/m_medium"
+                        android:textSize="12sp"
+                        android:text="позвонить"/>
+
+                    <com.varunest.sparkbutton.SparkButton
+                        android:id="@+id/like"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="10dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:layout_toStartOf="@id/like_value"
+                        app:sparkbutton_activeImage="@drawable/heart_fill"
+                        app:sparkbutton_inActiveImage="@drawable/heart"
+                        app:sparkbutton_iconSize="22dp"
+                        app:sparkbutton_primaryColor="@color/colorPrimary"
+                        app:sparkbutton_secondaryColor="@color/regular"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/like_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="1223"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@id/footer"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/comment_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="4dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/m_bold"
+                        android:text="@string/comments"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/comment_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:nestedScrollingEnabled="true"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:layout_below="@id/comment_title"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/comment_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        app:fabSize="mini"
+                        android:src="@drawable/comment_add"
+                        app:backgroundTint="@color/primary"
+                        android:layout_margin="6dp"
+                        android:tint="@color/white"
+                        android:layout_below="@id/comment_recycler"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/comment_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/comment_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_medium"
+            android:layout_toStartOf="@id/comment_send"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:hint="Ваш комментария"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/comment_send"
+            app:backgroundTint="@color/primary"
+            android:tint="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

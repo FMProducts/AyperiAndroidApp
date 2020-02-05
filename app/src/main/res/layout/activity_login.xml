@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fmproduct.taleynamalar.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/registration"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/m_bold"
+            android:layout_centerVertical="true"
+            android:text="Вход в систему"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/AppTabsTextAppearance"
+            app:helperTextTextAppearance="@style/AppTabsTextAppearance"
+            app:counterOverflowTextAppearance="@style/AppTabsTextAppearance"
+            app:counterTextAppearance="@style/AppTabsTextAppearance"
+            app:errorTextAppearance="@style/AppTabsTextAppearance"
+            android:hint="Имя пользователя"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m_light"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintTextAppearance="@style/AppTabsTextAppearance"
+            app:helperTextTextAppearance="@style/AppTabsTextAppearance"
+            app:counterOverflowTextAppearance="@style/AppTabsTextAppearance"
+            app:counterTextAppearance="@style/AppTabsTextAppearance"
+            app:errorTextAppearance="@style/AppTabsTextAppearance"
+            android:hint="Номер Телефона"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m_light"
+                android:inputType="phone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:useCompatPadding="true"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/login"
+        />
+
+</RelativeLayout>

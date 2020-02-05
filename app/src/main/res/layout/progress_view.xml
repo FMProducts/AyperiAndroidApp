@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:progressView_colorBackground="@color/white"
+        app:progressView_orientation="horizontal"
+        app:progressView_colorProgress="@color/primary"
+        app:progressView_progress="0"
+        app:progressView_labelText="fariz"
+        app:progressView_labelSize="14sp"
+        android:layout_margin="6dp"
+        app:progressView_labelColorInner="@color/white"
+        app:progressView_labelColorOuter="@color/black"
+        />
+
+    <CheckBox
+        android:id="@+id/radio_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="@color/primary"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="fmproduct.taleynamalar.BannerDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/girl_banner01"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/banner_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_image"
+        android:textSize="12sp"
+        android:fontFamily="@font/m_light"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="@string/lorem_ipsum"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/banner_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@android:color/white"
+        android:layout_below="@id/banner_text"
+        app:fabSize="mini"
+        app:useCompatPadding="true"
+        app:backgroundTint="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/phone"/>
+
+</RelativeLayout>

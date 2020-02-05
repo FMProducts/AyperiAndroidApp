@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/content2"
+            android:layout_below="@id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/login_card"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/success"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="12dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/login"
+                        android:layout_marginStart="7dp"
+                        android:adjustViewBounds="true"
+                        android:padding="16dp"
+                        android:tint="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/m_bold"
+                        android:textColor="@android:color/white"
+                        android:text="Вход"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/registation_card"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="4dp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="12dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/registration"
+                    android:layout_marginStart="7dp"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:tint="@android:color/white"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/m_bold"
+                    android:textColor="@android:color/white"
+                    android:text="Регистрация"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+
+            android:layout_below="@id/registation_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/list_card"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="12dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/list"
+                        android:layout_marginStart="7dp"
+                        android:adjustViewBounds="true"
+                        android:padding="16dp"
+                        android:tint="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/m_bold"
+                        android:textColor="@android:color/white"
+                        android:text="Лента"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shop_card"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="12dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/shoppingcart"
+                        android:layout_marginStart="7dp"
+                        android:adjustViewBounds="true"
+                        android:padding="16dp"
+                        android:tint="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginStart="2dp"
+                        android:fontFamily="@font/m_bold"
+                        android:textColor="@android:color/white"
+                        android:text="@string/shops"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chat_card"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/danger"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="12dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/chat"
+                        android:layout_marginStart="7dp"
+                        android:adjustViewBounds="true"
+                        android:padding="16dp"
+                        android:tint="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/m_bold"
+                        android:textColor="@android:color/white"
+                        android:text="Чат"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/language_card"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/info"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="12dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/language"
+                        android:layout_marginStart="7dp"
+                        android:adjustViewBounds="true"
+                        android:padding="16dp"
+                        android:tint="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/m_bold"
+                        android:textColor="@android:color/white"
+                        android:text="Языки"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
